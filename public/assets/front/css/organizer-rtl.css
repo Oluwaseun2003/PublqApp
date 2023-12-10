@@ -1,0 +1,12 @@
+.organizer-details-content{
+    text-align: right;
+}
+.organizer-details-content .social-style-two{
+    right: unset;
+    left: 0;
+}
+.organizer-content .social-style-two{
+    right: unset;
+    left: 5px;
+    transform: translateX(-100%);
+}

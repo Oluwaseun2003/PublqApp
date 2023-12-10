@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700;800;900&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth ;
+    outline: none;
+    font-family: "Inter";
+  }
+  html{
+    font-size: 62.5%;
+   overflow-x: hidden;
+  } 
+
+
+body{   
+    color: #000;
+  }
+
+  h3{
+    color: #FFF;
+    font-family: "Inter";
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 400;
+    padding-bottom: 1rem;
+    }
+
+  span{
+      color: #FFF;
+      font-family: "Inter";
+      font-size: 1.8rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+  .invoice-sec{
+    background-image: linear-gradient(rgb(0, 0, 0, 0.9), rgb(0, 0, 0, 0.9)), url(../img/BGImage.png);
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+   background-attachment: fixed;
+
+    background-size: cover;
+    padding: 5rem 10rem;
+    /* height: 100%; */
+}
+
+.img-div{
+   background-image: url(../img/EventImage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px 30px 0px 0px;
+    width: 100%;
+    height: 451px;
+    flex-shrink: 0;
+  
+}
+
+.text-div{
+  background: linear-gradient(233deg, #1764E8 13.36%, #2E7096 98.94%);
+  padding: 3rem 15rem;
+  display: flex;
+  gap: 30rem;
+  border-bottom: 1px dotted white ;
+  
+}
+
+.qr-div{
+  background: linear-gradient(233deg, #1764E8 13.36%, #2E7096 98.94%);
+  padding: 3rem 15rem;
+  display: flex;
+  gap: 5rem;
+  
+}
+
+
+
+.head-txt{
+color: #FFF;
+font-family: "Inter";
+font-size: 1.8rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+padding-bottom: 1rem;
+}
+
+.id-div{
+  margin-top: 8rem;
+}
+
+.qr-txt{
+  margin-top: 5rem;
+}
+
+
+footer{
+  background-color: #fff;
+  display: flex;
+  gap: 50rem;
+  padding: 5rem 20rem;
+}
+
+footer img{
+  width: 70%;
+}
+
+.bill{
+
+}
+.bill h3,
+.bill p,
+.bill span{
+  color: #000;
+  
+}
+
+/* BREAK POINTS */
+
+  @media (max-width: 1200px){
+    html {
+      font-size: 55%;
+    }
+
+    .text-div{
+      padding: 3rem 10rem;
+      display: flex;
+      gap: 20rem;
+      border-bottom: 1px dotted white ;
+      
+    }
+
+    footer{
+      display: flex;
+      gap: 40rem;
+      padding: 5rem 15rem;
+    }
+  }
+
+  @media (max-width: 991px){ 
+
+    .invoice-sec{
+      padding: 3rem 5rem;
+    }
+
+    .img-div{
+     
+       width: 100%;
+       height: 451px;
+     
+   }
+    .text-div{
+      padding: 3rem 5rem;
+      display: flex;
+      gap: 10rem;
+      
+    }
+
+    .head-txt{
+        padding-bottom: .5rem;
+      }
+    .qr-div{
+      padding: 3rem 5rem;
+      /* gap: rem; */
+      
+    }
+    .qr-txt{
+      margin-left: -11rem;
+    }
+
+    .qr-img{
+      width: 70%;
+    }
+
+    footer{
+      display: flex;
+      gap: 40rem;
+      padding: 5rem 5rem;
+    }
+  
+    
+  }
+
+  @media (max-width:768px){
+    .invoice-sec{
+      padding: 3rem 3rem;
+    }
+
+    .text-div{
+      padding: 3rem 2rem;
+      display: flex;
+      gap: 10rem;
+      
+    }
+
+    .qr-div{
+      padding: 3rem 5rem;
+      
+    }
+
+    .qr-txt{
+      margin-top: 2rem;
+    }
+
+    .qr-img img{
+      width: 40%;
+    }
+
+    footer{
+     gap: 2rem;
+      padding: 3rem 3rem;
+    }
+
+  
+
+    .bill{
+      width: 100%;
+    }
+
+  }
+
+  @media (max-width:520px){
+
+    html{
+      font-size:50%
+    }
+
+    .invoice-sec{
+      padding: auto;
+    }
+
+    .text-div{
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .qr-div{
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .qr-img{
+      width: 70%;
+    }
+    .qr-txt{
+      margin-left: 0;
+    }
+
+
+  }
+
+ 
+
+
+  

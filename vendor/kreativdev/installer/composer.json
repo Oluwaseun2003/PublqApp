@@ -1,0 +1,28 @@
+{
+    "name": "kreativdev/installer",
+    "description": "This package will add installer in Laravel Items of KreativDev (Non-SAAS)",
+    "type": "library",
+    "require": {
+        "rachidlaasri/laravel-installer": "^4.1"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Kreativdev\\Installer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "KreativDev",
+            "email": "kreativdev.envato@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kreativdev\\Installer\\KdInstallerServiceProvider"
+            ]
+        }
+    }
+}

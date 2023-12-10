@@ -1,0 +1,131 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+@import url(../fonts/droid-serif/stylesheet.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-print-color-adjust: exact !important;   /* Chrome, Safari, Edge */
+  color-adjust: exact !important;                 /*Firefox*/
+}
+
+
+html {
+  font-size: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+a:hover,
+a:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000000;
+  margin: 0;
+  font-family: 'Droid Serif';
+}
+
+/* Common CSS */
+.text-center {
+  text-align: center;
+}
+
+body {
+  font-family: 'Droid Serif';
+}
+
+/* Certificate CSS */
+.certificate-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.certificate-wrapper {
+  max-width: 1010px;
+  width: 100%;
+  margin: 0 auto;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 30px 0px;
+  position:  relative;
+}
+
+.main-content {
+  padding: 0 30px;
+}
+
+.certificate-wrapper .certificate-top-content {
+  padding-top: 25px;
+}
+
+.certificate-wrapper .bottom-shape {
+  padding-bottom: 17px;
+}
+
+.certificate-wrapper .certificate-top-content .img-1 {
+  margin-bottom: 35px;
+}
+
+.certificate-wrapper .certificate-top-content h1 {
+  font-size: 50px;
+  font-family: 'Droid Serif';
+  margin-bottom: 23px;
+}
+
+.certificate-wrapper .certificate-top-content .img-2 {
+  margin-bottom: 17px;
+}
+
+.certificate-wrapper .main-content p {
+  font-size: 24px;
+  line-height: 34px;
+  font-family: 'Droid Serif';
+  margin-bottom: 30px;
+}
+
+.certificate-wrapper .user-box {
+  margin-bottom: 20px;
+}
+
+.certificate-wrapper .user-box h4 {
+  position: relative;
+  display: inline-block;
+  font-family: 'Grand Hotel', cursive;
+  font-size: 23px;
+}
+
+.certificate-wrapper .user-box h4:after {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 3px;
+  background-color: #000000;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+button#print-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}

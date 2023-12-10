@@ -1,0 +1,93 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?5dec26c17146a0cefe7d5ad2144e7028") format("truetype"),
+url("./flaticon.woff?5dec26c17146a0cefe7d5ad2144e7028") format("woff"),
+url("./flaticon.woff2?5dec26c17146a0cefe7d5ad2144e7028") format("woff2"),
+url("./flaticon.eot?5dec26c17146a0cefe7d5ad2144e7028#iefix") format("embedded-opentype"),
+url("./flaticon.svg?5dec26c17146a0cefe7d5ad2144e7028#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "right-arrow": "\f101",
+    "calendar": "\f102",
+    "video-call": "\f103",
+    "venue": "\f104",
+    "video-call-1": "\f105",
+    "check": "\f106",
+    "map-pin": "\f107",
+    "coupon": "\f108",
+    "payment-method": "\f109",
+    "organization": "\f10a",
+    "calendar-event": "\f10b",
+    "reporter": "\f10c",
+    "like": "\f10d",
+    "salary": "\f10e",
+    "online-streaming": "\f10f",
+    "password-code": "\f110",
+    "pen": "\f111",
+);
+
+.flaticon-right-arrow:before {
+    content: map-get($flaticon-map, "right-arrow");
+}
+.flaticon-calendar:before {
+    content: map-get($flaticon-map, "calendar");
+}
+.flaticon-video-call:before {
+    content: map-get($flaticon-map, "video-call");
+}
+.flaticon-venue:before {
+    content: map-get($flaticon-map, "venue");
+}
+.flaticon-video-call-1:before {
+    content: map-get($flaticon-map, "video-call-1");
+}
+.flaticon-check:before {
+    content: map-get($flaticon-map, "check");
+}
+.flaticon-map-pin:before {
+    content: map-get($flaticon-map, "map-pin");
+}
+.flaticon-coupon:before {
+    content: map-get($flaticon-map, "coupon");
+}
+.flaticon-payment-method:before {
+    content: map-get($flaticon-map, "payment-method");
+}
+.flaticon-organization:before {
+    content: map-get($flaticon-map, "organization");
+}
+.flaticon-calendar-event:before {
+    content: map-get($flaticon-map, "calendar-event");
+}
+.flaticon-reporter:before {
+    content: map-get($flaticon-map, "reporter");
+}
+.flaticon-like:before {
+    content: map-get($flaticon-map, "like");
+}
+.flaticon-salary:before {
+    content: map-get($flaticon-map, "salary");
+}
+.flaticon-online-streaming:before {
+    content: map-get($flaticon-map, "online-streaming");
+}
+.flaticon-password-code:before {
+    content: map-get($flaticon-map, "password-code");
+}
+.flaticon-pen:before {
+    content: map-get($flaticon-map, "pen");
+}
