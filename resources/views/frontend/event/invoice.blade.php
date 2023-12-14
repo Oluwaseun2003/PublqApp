@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-  <link rel="stylesheet" href="{{ asset('assets/admin/css/newinvoice.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin/css/newinvoice.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('css/newinvoice.css') }}">
 </head>
 <body>
         @php
@@ -16,50 +17,7 @@
         <div class="img-div">
 
         </div>
-<!-- 
 
-
-@if (@$bookingInfo->evnt->date_type == 'single')
-                <p>
-                  {{ __('Event End Date') . ': ' }} <span class="text-muted">
-                    {{ Carbon\Carbon::parse(@$bookingInfo->evnt->end_date . @$bookingInfo->evnt->end_time)->format('d M, Y h:ia') }}
-                  </span>
-                </p>
-                <p>
-                  {{ __('Duration') . ': ' }} <span class="text-muted">
-                    {{ @$bookingInfo->evnt->duration }}
-                  </span>
-                </p>
-              @else
-                @php
-                  $date = Carbon\Carbon::parse($bookingInfo->event_date)->format('Y-m-d');
-                  $time = Carbon\Carbon::parse($bookingInfo->event_date)->format('H:i');
-                  $evnt = @$bookingInfo->evnt
-                      ->dates()
-                      ->where('start_date', $date)
-                      ->where('start_time', $time)
-                      ->first();
-                @endphp
-
-                <p>
-                  {{ __('Event End Date') . ': ' }} <span class="text-muted">
-                    @if (!empty($evnt))
-                      {{ Carbon\Carbon::parse(@$evnt->end_date . @$evnt->end_time)->format('D, M d, Y H:i a') }}
-                    @endif
-                  </span>
-                </p>
-
-                <p>
-                  {{ __('Duration') . ': ' }} <span class="text-muted">
-                    @if (!empty($evnt))
-                      {{ $evnt->duration }}
-                    @endif
-                  </span>
-                </p>
-              @endif
-
-
- -->
 
 
         <div class="text-div">
@@ -185,22 +143,22 @@
             </div>
     
     </section>
-   
-
-    
-</body>
-
-<footer>
+  
+    <footer>
     <div class="bill">
         <h3>Biling Details</h3>
 
-        <p class="head-txt">Name:<span>Nov 21, 2023</span></p>
-                <p class="head-txt">Email: <span>1</span></p>
-                <p class="head-txt">Contact Number: <span>1hr</span></p>
+        <p class="head-txt">Name:<span>{{ $orderInfo->billing_fname . ' ' . $orderInfo->billing_lname }}</span></p>
+                <p class="head-txt">Email: <span>{{ $orderInfo->billing_email }}</span></p>
+                <p class="head-txt">Contact Number: <span>{{ $orderInfo->billing_phone }}</span></p>
 
     </div>
         <div>
             <img class="qr-img" src="{{ asset('assets/admin/img/logo.png') }}" alt="">
         </div>
 </footer>
+
+    
+</body>
+
 </html>

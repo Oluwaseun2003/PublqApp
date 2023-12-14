@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>{{ 'Invoice | ' . config('app.name') }}</title>
 
-  <link rel="stylesheet" href="{{ asset('assets/admin/css/newinvoice.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin/css/newinvoice.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('css/newinvoice.css') }}">
+  <link rel="shortcut icon" type="image/png" href="{{ asset('assets/admin/img/' . $websiteInfo->favicon) }}">
 </head>
 <body>
         @php
@@ -142,21 +144,21 @@
     
     </section>
    
-
-    
-</body>
-
-<footer>
+    <footer>
     <div class="bill">
         <h3>Biling Details</h3>
 
-        <p class="head-txt">Name:<span>Nov 21, 2023</span></p>
-                <p class="head-txt">Email: <span>1</span></p>
-                <p class="head-txt">Contact Number: <span>1hr</span></p>
+        <p class="head-txt">Name:<span>{{ $orderInfo->billing_fname . ' ' . $orderInfo->billing_lname }}</span></p>
+                <p class="head-txt">Email: <span>{{ $orderInfo->billing_email }}</span></p>
+                <p class="head-txt">Contact Number: <span>{{ $orderInfo->billing_phone }}</span></p>
 
     </div>
         <div>
             <img class="qr-img" src="{{ asset('assets/admin/img/logo.png') }}" alt="">
         </div>
 </footer>
+    
+</body>
+
+
 </html>
