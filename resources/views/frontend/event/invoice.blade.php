@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>{{ 'Invoice | ' . config('app.name') }}</title>
 
   <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin/css/newinvoice.css') }}">
-  <link rel="stylesheet" type="text/css" href="{{ asset('css/newinvoice.css') }}">
+  <link rel="shortcut icon" type="image/png" href="{{ asset('assets/admin/img/' . $websiteInfo->favicon) }}">
+
 </head>
 <body>
         @php

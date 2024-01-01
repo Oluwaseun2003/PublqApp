@@ -121,8 +121,11 @@ footer img{
 /* BREAK POINTS */
 
   @media (max-width: 1200px){
-    html {
-      font-size: 55%;
+    Print {
+      /* Your print styles here*/
+      page-break-before: avoid;
+      page-break-after: avoid;
+      font-size: 55%; 
     }
 
     .text-div{
@@ -141,6 +144,12 @@ footer img{
   }
 
   @media (max-width: 991px){ 
+    Print {
+      /* Your print styles here*/
+      page-break-before: avoid;
+      page-break-after: avoid;
+      font-size: 55%; 
+    }
 
     .invoice-sec{
       padding: 3rem 5rem;
@@ -185,6 +194,12 @@ footer img{
   }
 
   @media (max-width:768px){
+    Print {
+      /* Your print styles here*/
+      page-break-before: avoid;
+      page-break-after: avoid;
+      font-size: 55%; 
+    }
     .invoice-sec{
       padding: 3rem 3rem;
     }
@@ -225,6 +240,8 @@ footer img{
   @media (max-width:520px){
 
     html{
+      page-break-before: avoid;
+      page-break-after: avoid;
       font-size:50%
     }
 
